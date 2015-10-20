@@ -1,16 +1,7 @@
-@import meyers_reset
-@import bootstrap
-@import partials/typography
-
-#map 
-  position: absolute
-  top: 0
-  left: 0
-  right: 0
-  bottom: 0
+$pink: rgb(195, 135, 175)
 
 body 
-  background: image-url("body-bg.png")
+  background: rgba($pink, .3)
   background-repeat: no-repeat 
   background-size: cover
 
@@ -22,3 +13,12 @@ body
 .landing-page
   h1  
     text-align: center 
+    font-family: avenir, sans-serif
+    font-weight: 300
+    letter-spacing: .05em
+
+.box 
+  width: 40px 
+  height: 40px 
+  background: white 
+  display: block
