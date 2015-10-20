@@ -1,4 +1,9 @@
+@import meyers_reset
+@import bootstrap
+@import partials/typography
+
 $pink: rgb(195, 135, 175)
+
 
 body 
   background: rgba($pink, .3)
@@ -6,7 +11,7 @@ body
   background-size: cover
 
 .sc-embed
-  width: 50%
+  width: 100%
   margin: 20px auto
   display: block
 
@@ -17,8 +22,16 @@ body
     font-weight: 300
     letter-spacing: .05em
 
-.box 
-  width: 40px 
-  height: 40px 
-  background: white 
-  display: block
+a 
+  color: $gray 
+  &:hover 
+    color: $gray-dark
+    text-decoration: none 
+
+.menu
+  list-style: none 
+  text-align: center 
+  margin: 0 0 40px
+  li 
+    display: inline-block
+    margin: 0 10px

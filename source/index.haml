@@ -1,7 +1,17 @@
 .landing-page 
   %h1 LMNOP
 
-  %iframe.sc-embed{:frameborder => "no", :height => "450", :scrolling => "no", :src => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222833558&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true", :width => "100%"}
+  %ul.menu
+    %li= link_to "About", "/about"
+    %li= link_to "Contact", "contact"
+    %li= link_to "Music", "/music"
 
-  .box
+
+.container 
+  .row 
+    .col-sm-6
+      %iframe.sc-embed{:frameborder => "no", :height => "200", :scrolling => "no", :src => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222833558&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true", :width => "100%"}
+
+    .col-sm-6
+      %iframe.sc-embed{:frameborder => "no", :height => "200", :scrolling => "no", :src => "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/222833558&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true", :width => "100%"}
 
